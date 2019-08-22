@@ -33,8 +33,8 @@ def i_press_sign_in(browser):
 
 @when(parsers.parse('I pass my e-mail: "{email}" and my password: "{password}"'))
 def i_pass_my_email_and_my_password(browser,email,password):
-    browser.find_element_by_id("email").send_keys("aaa@jjj.com")
-    browser.find_element_by_id("passwd").send_keys("12345")
+    browser.find_element_by_id("email").send_keys(email)
+    browser.find_element_by_id("passwd").send_keys(password)
     browser.find_element_by_id("SubmitLogin").click()
 
 @then('I can see my account')
