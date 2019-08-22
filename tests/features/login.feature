@@ -6,5 +6,5 @@ Feature: Login
 Scenario: Customer login to the application
     Given I am in the website
     When I press Sign in
-    And I pass my e-mail and my password
+    When I pass my e-mail: "aaa@jjj" and my password: "12345"
     Then I can see my account
